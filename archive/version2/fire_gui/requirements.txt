@@ -1,8 +1,0 @@
-Flask==3.1.1
-joblib==1.5.3
-numpy==2.0.2
-pandas==2.2.3
-scikit-learn==1.6.1
-tensorflow==2.19.0
-openpyxl==3.1.5
-# No GIS Python package is required; the bundled Natural Earth GeoJSON is read locally.
