@@ -1,0 +1,1063 @@
+{
+  "study": "reanalysis_20261010",
+  "features": [
+    {
+      "name": "batch_neighbors_1km",
+      "description": "Other detections within 1 km at the same rounded acquisition hour; current batch required.",
+      "group": "spatial",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "batch_other_satellites",
+      "description": "Number of other spacecraft within 2 km in the current hour batch.",
+      "group": "spatial",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "recent_cells_24h",
+      "description": "Unique fixed 500 m cells within 2 km in last 24h, including anchor cell.",
+      "group": "spatial",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "previous_cells_24to72h",
+      "description": "Unique fixed 500 m cells within 2 km between 24 and 72h earlier.",
+      "group": "spatial",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "new_cells_24h",
+      "description": "Recent cells not seen in the preceding 24\u201372h reference window.",
+      "group": "spatial",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "new_cell_fraction",
+      "description": "New cells divided by recent cells; without earlier context this is 1, not evidence of growth.",
+      "group": "spatial",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "stationary_fraction_30d",
+      "description": "Prior observation count within 0.5 km divided by prior count within 2 km over 30d; zero if none.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "hours_since_nearby",
+      "description": "Minimum positive age of a detection within 0.5 km in 30d; missing if absent.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "satellites_72h",
+      "description": "Number of distinct prior satellites within 2 km over 72h.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "annulus_days_7d",
+      "description": "Distinct prior UTC dates at distances greater than 0.5 km and at most 2 km over 7d.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_0p5km_1d",
+      "description": "Number of observations strictly before anchor, within 0.5 km and preceding 1 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_0p5km_1d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 0.5 km and preceding 1 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_0p5km_1d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 0.5 km and preceding 1 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_0p5km_3d",
+      "description": "Number of observations strictly before anchor, within 0.5 km and preceding 3 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_0p5km_3d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 0.5 km and preceding 3 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_0p5km_3d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 0.5 km and preceding 3 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_0p5km_7d",
+      "description": "Number of observations strictly before anchor, within 0.5 km and preceding 7 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_0p5km_7d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 0.5 km and preceding 7 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_0p5km_7d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 0.5 km and preceding 7 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_0p5km_30d",
+      "description": "Number of observations strictly before anchor, within 0.5 km and preceding 30 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_0p5km_30d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 0.5 km and preceding 30 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_0p5km_30d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 0.5 km and preceding 30 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_1km_1d",
+      "description": "Number of observations strictly before anchor, within 1 km and preceding 1 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_1km_1d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 1 km and preceding 1 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_1km_1d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 1 km and preceding 1 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_1km_3d",
+      "description": "Number of observations strictly before anchor, within 1 km and preceding 3 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_1km_3d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 1 km and preceding 3 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_1km_3d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 1 km and preceding 3 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_1km_7d",
+      "description": "Number of observations strictly before anchor, within 1 km and preceding 7 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_1km_7d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 1 km and preceding 7 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_1km_7d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 1 km and preceding 7 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_1km_30d",
+      "description": "Number of observations strictly before anchor, within 1 km and preceding 30 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_1km_30d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 1 km and preceding 30 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_1km_30d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 1 km and preceding 30 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_2km_1d",
+      "description": "Number of observations strictly before anchor, within 2 km and preceding 1 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_2km_1d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 2 km and preceding 1 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_2km_1d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 2 km and preceding 1 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_2km_3d",
+      "description": "Number of observations strictly before anchor, within 2 km and preceding 3 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_2km_3d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 2 km and preceding 3 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_2km_3d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 2 km and preceding 3 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_2km_7d",
+      "description": "Number of observations strictly before anchor, within 2 km and preceding 7 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_2km_7d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 2 km and preceding 7 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_2km_7d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 2 km and preceding 7 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "count_2km_30d",
+      "description": "Number of observations strictly before anchor, within 2 km and preceding 30 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "days_2km_30d",
+      "description": "Number of distinct UTC calendar days strictly before anchor, within 2 km and preceding 30 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "visits_2km_30d",
+      "description": "Number of distinct acquisition hours strictly before anchor, within 2 km and preceding 30 days; year reset.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "extent_24h_km",
+      "description": "Greatest distance to another observed pixel within 2 km during current/preceding 24h; zero if absent.",
+      "group": "spatial",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "history_concentration",
+      "description": "Distinct prior days within 0.5 km divided by days within 2 km over 30d; denominator at least 1.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "recent_share",
+      "description": "Prior observations within 2 km over 3d divided by those over 30d; denominator at least 1.",
+      "group": "history",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "hour_sin",
+      "description": "sin(2*pi*local_hour/24), UTC+7.",
+      "group": "context",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "hour_cos",
+      "description": "cos(2*pi*local_hour/24), UTC+7.",
+      "group": "context",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "sat_Aqua",
+      "description": "One-hot indicator of reported spacecraft Aqua",
+      "group": "context",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "sat_Terra",
+      "description": "One-hot indicator of reported spacecraft Terra",
+      "group": "context",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "sat_SNPP",
+      "description": "One-hot indicator of reported spacecraft SNPP",
+      "group": "context",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "sat_NOAA20",
+      "description": "One-hot indicator of reported spacecraft NOAA20",
+      "group": "context",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "sat_Unknown",
+      "description": "One-hot indicator of reported spacecraft Unknown",
+      "group": "context",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "lat",
+      "description": "Latitude in degrees; geographic association can overfit known sites.",
+      "group": "context",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "lon",
+      "description": "Longitude in degrees; geographic association can overfit known sites.",
+      "group": "context",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "season_sin",
+      "description": "sin(2*pi*local_day_of_year/365.25); seasonal association, not weather.",
+      "group": "context",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "season_cos",
+      "description": "cos(2*pi*local_day_of_year/365.25); seasonal association, not weather.",
+      "group": "context",
+      "source": "2026-10-10 reanalysis",
+      "availability": "Precomputed study feature"
+    },
+    {
+      "name": "hot_K",
+      "description": "Active-fire pixel brightness temperature (K).",
+      "group": "quality",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "background_K",
+      "description": "Long-wave brightness temperature (K).",
+      "group": "quality",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "thermal_contrast_K",
+      "description": "Difference between the two brightness temperatures (K).",
+      "group": "quality",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "frp",
+      "description": "Fire radiative power (MW); never a verified-fire label.",
+      "group": "quality",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "scan",
+      "description": "Along-scan pixel size (km).",
+      "group": "quality",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "track",
+      "description": "Along-track pixel size (km).",
+      "group": "quality",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "pixel_area_km2",
+      "description": "Approximate pixel area: scan \u00d7 track.",
+      "group": "quality",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "frp_per_pixel_km2",
+      "description": "FRP divided by approximate pixel area.",
+      "group": "quality",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "confidence_modis",
+      "description": "MODIS numeric detection confidence (0\u2013100).",
+      "group": "quality",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "confidence_viirs",
+      "description": "VIIRS categorical confidence: low / nominal / high.",
+      "group": "quality",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "causal_1km_30m",
+      "description": "Cluster support using current/past detections in the declared 1 km / 30 min window.",
+      "group": "spatial",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "strict_prior_1km_30m",
+      "description": "Cluster support strictly before the anchor time.",
+      "group": "spatial",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "prior_count_1km_30m",
+      "description": "Count of prior observations within 1 km / 30 min.",
+      "group": "spatial",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "simultaneous_1km",
+      "description": "Same-time detections within 1 km.",
+      "group": "spatial",
+      "source": "2026-10-10 NASA sensitivity study",
+      "availability": "Input column / precomputed feature"
+    },
+    {
+      "name": "log_frp",
+      "description": "Earlier notebook feature: log frp. Consult the original feature definition before computing.",
+      "group": "quality",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "brightness_main",
+      "description": "Earlier notebook feature: brightness main. Consult the original feature definition before computing.",
+      "group": "quality",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "brightness_background",
+      "description": "Earlier notebook feature: brightness background. Consult the original feature definition before computing.",
+      "group": "quality",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "thermal_difference",
+      "description": "Earlier notebook feature: thermal difference. Consult the original feature definition before computing.",
+      "group": "quality",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "confidence_score",
+      "description": "Earlier notebook feature: confidence score. Consult the original feature definition before computing.",
+      "group": "quality",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "daytime",
+      "description": "Earlier notebook feature: daytime. Consult the original feature definition before computing.",
+      "group": "quality",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "local_hour_sin",
+      "description": "Earlier notebook feature: local hour sin. Consult the original feature definition before computing.",
+      "group": "quality",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "local_hour_cos",
+      "description": "Earlier notebook feature: local hour cos. Consult the original feature definition before computing.",
+      "group": "quality",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "same_time_neighbors_1km",
+      "description": "Earlier notebook feature: same time neighbors 1km. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "prior_neighbors_1km_30min",
+      "description": "Earlier notebook feature: prior neighbors 1km 30min. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_detections_2km_6h",
+      "description": "Earlier notebook feature: past detections 2km 6h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_detections_2km_24h",
+      "description": "Earlier notebook feature: past detections 2km 24h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_detections_2km_72h",
+      "description": "Earlier notebook feature: past detections 2km 72h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_visits_2km_24h",
+      "description": "Earlier notebook feature: past visits 2km 24h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_visits_2km_72h",
+      "description": "Earlier notebook feature: past visits 2km 72h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_satellites_2km_72h",
+      "description": "Earlier notebook feature: past satellites 2km 72h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_annulus_detections_72h",
+      "description": "Earlier notebook feature: past annulus detections 72h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_annulus_days_7d",
+      "description": "Earlier notebook feature: past annulus days 7d. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "prior_cells_24to72h",
+      "description": "Earlier notebook feature: prior cells 24to72h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "new_cell_fraction_24h",
+      "description": "Earlier notebook feature: new cell fraction 24h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "cell_count_change_24h",
+      "description": "Earlier notebook feature: cell count change 24h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "radial_spread_change_24h",
+      "description": "Earlier notebook feature: radial spread change 24h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "centroid_shift_24h_km",
+      "description": "Earlier notebook feature: centroid shift 24h km. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_days_0p375km_30d",
+      "description": "Earlier notebook feature: past days 0p375km 30d. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_days_0p375km_7d",
+      "description": "Earlier notebook feature: past days 0p375km 7d. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_days_0p5km_30d",
+      "description": "Earlier notebook feature: past days 0p5km 30d. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_days_0p5km_7d",
+      "description": "Earlier notebook feature: past days 0p5km 7d. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_days_1km_30d",
+      "description": "Earlier notebook feature: past days 1km 30d. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_days_1km_7d",
+      "description": "Earlier notebook feature: past days 1km 7d. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_detections_0p5km_7d",
+      "description": "Earlier notebook feature: past detections 0p5km 7d. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_detections_0p5km_30d",
+      "description": "Earlier notebook feature: past detections 0p5km 30d. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_visits_0p5km_7d",
+      "description": "Earlier notebook feature: past visits 0p5km 7d. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "past_visits_0p5km_30d",
+      "description": "Earlier notebook feature: past visits 0p5km 30d. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "hours_since_prior_0p5km",
+      "description": "Earlier notebook feature: hours since prior 0p5km. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "frp_ratio_to_prior72h",
+      "description": "Earlier notebook feature: frp ratio to prior72h. Consult the original feature definition before computing.",
+      "group": "history",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_detections_24h",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_visits_24h",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_cells_24h",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_new_cells_24h",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_new_fraction_24h",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_extent_24h_km",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_detections_72h",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_visits_72h",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_cells_72h",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_new_cells_72h",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_new_fraction_72h",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "future_extent_72h_km",
+      "description": "Retrospective feature using observations after the anchor. Unavailable for immediate detection.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "longitude",
+      "description": "Earlier notebook feature: longitude. Consult the original feature definition before computing.",
+      "group": "context",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "latitude",
+      "description": "Earlier notebook feature: latitude. Consult the original feature definition before computing.",
+      "group": "context",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "archive_type_0",
+      "description": "Archive classification; retrospective, product-specific and subject to processing provenance.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "archive_type_1",
+      "description": "Archive classification; retrospective, product-specific and subject to processing provenance.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "archive_type_2",
+      "description": "Archive classification; retrospective, product-specific and subject to processing provenance.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    },
+    {
+      "name": "archive_type_3",
+      "description": "Archive classification; retrospective, product-specific and subject to processing provenance.",
+      "group": "research",
+      "source": "Earlier notebooks 03\u201305",
+      "availability": "Imported feature only"
+    }
+  ],
+  "optimized": {
+    "name": "History-only logistic review candidate",
+    "threshold": 0.178169086490223,
+    "features": [
+      "batch_neighbors_1km",
+      "batch_other_satellites",
+      "recent_cells_24h",
+      "previous_cells_24to72h",
+      "new_cells_24h",
+      "new_cell_fraction",
+      "stationary_fraction_30d",
+      "hours_since_nearby",
+      "satellites_72h",
+      "annulus_days_7d",
+      "count_0p5km_1d",
+      "days_0p5km_1d",
+      "visits_0p5km_1d",
+      "count_0p5km_3d",
+      "days_0p5km_3d",
+      "visits_0p5km_3d",
+      "count_0p5km_7d",
+      "days_0p5km_7d",
+      "visits_0p5km_7d",
+      "count_0p5km_30d",
+      "days_0p5km_30d",
+      "visits_0p5km_30d",
+      "count_1km_1d",
+      "days_1km_1d",
+      "visits_1km_1d",
+      "count_1km_3d",
+      "days_1km_3d",
+      "visits_1km_3d",
+      "count_1km_7d",
+      "days_1km_7d",
+      "visits_1km_7d",
+      "count_1km_30d",
+      "days_1km_30d",
+      "visits_1km_30d",
+      "count_2km_1d",
+      "days_2km_1d",
+      "visits_2km_1d",
+      "count_2km_3d",
+      "days_2km_3d",
+      "visits_2km_3d",
+      "count_2km_7d",
+      "days_2km_7d",
+      "visits_2km_7d",
+      "count_2km_30d",
+      "days_2km_30d",
+      "visits_2km_30d",
+      "extent_24h_km",
+      "history_concentration",
+      "recent_share"
+    ],
+    "status": "Post-selection review candidate; not prospectively validated",
+    "execution": "Import frozen retain_for_review predictions; inference is not implemented in this interface release.",
+    "results": [
+      {
+        "policy": "verified",
+        "year": "2025",
+        "threshold": "0.178169086490223",
+        "n": "1177",
+        "TN": "426",
+        "FP": "712",
+        "FN": "0",
+        "TP": "39",
+        "precision": "0.05193075898801598",
+        "recall": "1.0",
+        "no_fire_removed": "0.37434094903339193",
+        "removed_fraction": "0.3619371282922685",
+        "f1": "0.09873417721518987"
+      },
+      {
+        "policy": "verified",
+        "year": "2026",
+        "threshold": "0.178169086490223",
+        "n": "997",
+        "TN": "541",
+        "FP": "415",
+        "FN": "0",
+        "TP": "41",
+        "precision": "0.08991228070175439",
+        "recall": "1.0",
+        "no_fire_removed": "0.5658995815899581",
+        "removed_fraction": "0.5426278836509528",
+        "f1": "0.16498993963782696"
+      },
+      {
+        "policy": "sitrep_inclusive",
+        "year": "2025",
+        "threshold": "0.178169086490223",
+        "n": "1309",
+        "TN": "426",
+        "FP": "712",
+        "FN": "26",
+        "TP": "145",
+        "precision": "0.1691948658109685",
+        "recall": "0.847953216374269",
+        "no_fire_removed": "0.37434094903339193",
+        "removed_fraction": "0.34530175706646293",
+        "f1": "0.2821011673151751"
+      },
+      {
+        "policy": "sitrep_inclusive",
+        "year": "2026",
+        "threshold": "0.178169086490223",
+        "n": "1148",
+        "TN": "541",
+        "FP": "415",
+        "FN": "0",
+        "TP": "192",
+        "precision": "0.3163097199341021",
+        "recall": "1.0",
+        "no_fire_removed": "0.5658995815899581",
+        "removed_fraction": "0.4712543554006969",
+        "f1": "0.4806007509386733"
+      }
+    ]
+  },
+  "alternatives": [
+    {
+      "id": "verified_0.9",
+      "candidate": "history_sensor_geo_season__extra_trees",
+      "threshold": 0.3260160388158257,
+      "target": 0.9,
+      "policy": "verified",
+      "feature_count": 60
+    },
+    {
+      "id": "verified_0.95",
+      "candidate": "history_sensor_geo_season__extra_trees",
+      "threshold": 0.2708610256026799,
+      "target": 0.95,
+      "policy": "verified",
+      "feature_count": 60
+    },
+    {
+      "id": "verified_0.99",
+      "candidate": "history_sensor_geo_season__boost_shallow",
+      "threshold": 0.0651339589485673,
+      "target": 0.99,
+      "policy": "verified",
+      "feature_count": 60
+    },
+    {
+      "id": "sitrep_inclusive_0.9",
+      "candidate": "history_sensor_geo_season__boost_shallow",
+      "threshold": 0.5575042614695633,
+      "target": 0.9,
+      "policy": "sitrep_inclusive",
+      "feature_count": 60
+    },
+    {
+      "id": "sitrep_inclusive_0.95",
+      "candidate": "history_sensor_geo_season__boost_shallow",
+      "threshold": 0.3883439142288005,
+      "target": 0.95,
+      "policy": "sitrep_inclusive",
+      "feature_count": 60
+    },
+    {
+      "id": "sitrep_inclusive_0.99",
+      "candidate": "history_sensor_geo_season__extra_trees",
+      "threshold": 0.28302213914926977,
+      "target": 0.99,
+      "policy": "sitrep_inclusive",
+      "feature_count": 60
+    }
+  ]
+}

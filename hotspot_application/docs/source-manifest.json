@@ -1,0 +1,32 @@
+{
+  "reference_date": "2026-10-16",
+  "study": "reanalysis_20261010",
+  "features": 127,
+  "optimized_feature_subset": 49,
+  "source_files": [
+    {
+      "path": "hotspot_detection_new/general_study/reanalysis_20261010/outputs/derived_feature_dictionary.csv",
+      "sha256": "0f81809a051d7324488744c5fd8c078408be5b6d62ea24cf8592557f266d2851"
+    },
+    {
+      "path": "hotspot_detection_new/general_study/reanalysis_20261010/outputs/fire_run_manifest.json",
+      "sha256": "1c61482c35e30326344b775e72c39dcadb14a3a6108bc1df02f24f164e5c43e5"
+    },
+    {
+      "path": "hotspot_detection_new/general_study/reanalysis_20261010/outputs/locked_fire_selections.json",
+      "sha256": "8a268f5eb8a77545daf4a37c896834edfe27021a7b1b638bae6f2ee62d002801"
+    },
+    {
+      "path": "hotspot_detection_new/general_study/reanalysis_20261010/outputs/nasa_fire_selections.json",
+      "sha256": "9624ac2ef7877c8aa541fc5223c20e44358ea71814a7119cf6ffc3632de46615"
+    },
+    {
+      "path": "hotspot_detection_new/general_study/reanalysis_20261010/outputs/review_candidate_confusions.csv",
+      "sha256": "b6ecb898cd145f7ef4f97a366a46ce9d4a32614fb72ffbad4cf9157ebffbb458"
+    },
+    {
+      "path": "hotspot_detection_new/notebooks/outputs/hotspot_temporal_study/feature_specifications.json",
+      "sha256": "4d580f2e34b02364475f53454fdb063b80f028d8bb46b825ea55a1c08f15358f"
+    }
+  ]
+}

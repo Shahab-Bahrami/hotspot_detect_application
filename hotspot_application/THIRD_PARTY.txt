@@ -1,0 +1,50 @@
+Third-party assets included in this local interface
+Downloaded 16 October 2026. No runtime CDN connection is required.
+
+Leaflet 1.9.4
+Source: https://unpkg.com/leaflet@1.9.4/dist/leaflet.js
+Source: https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
+License: BSD-2-Clause; static/vendor/LEAFLET-LICENSE.txt
+Only circle/canvas layers are used; default marker image assets are not required.
+
+Papa Parse 5.5.3
+Source: https://unpkg.com/papaparse@5.5.3/papaparse.min.js
+License: MIT; static/vendor/PAPAPARSE-LICENSE.txt
+
+SheetJS Community Edition 0.20.3
+Source: https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js
+License: Apache-2.0; static/vendor/SHEETJS-LICENSE.txt
+
+Poppins, regular (400), medium (500), semibold (600)
+Source: Google Fonts, https://fonts.google.com/specimen/Poppins
+License: SIL Open Font License 1.1; static/assets/POPPINS-OFL.txt
+
+Natural Earth, 1:110m admin-0 country polygons
+Source: https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_admin_0_countries.geojson
+Terms: public domain, https://www.naturalearthdata.com/about/terms-of-use/
+Included file: static/data/world.geojson
+Country outlines are a low-resolution visual reference, not a jurisdictional claim.
+
+SenseNet logo
+Source: https://sensenet.ai/wp-content/uploads/2025/08/Sensenet-header-logo.svg
+SenseNet's existing brand asset, used for the requested SenseNet application interface.
+No third-party redistribution rights are asserted.
+
+SenseNet visual reference
+Source: https://sensenet.ai/
+The site publishes forest #244D4D, deep #122222, gold #B39C4D,
+cream #F6F6EA and Poppins in its global styles. The app adapts this palette.
+
+Optional online map
+OpenStreetMap tiles: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
+Attribution: OpenStreetMap contributors
+Terms and attribution: https://www.openstreetmap.org/copyright
+Only enabled by the user selecting the online map layer.
+
+Global demo CSV
+Generated synthetic observations with deterministic seed 227.
+Not NASA observations, not observed fires, and not a model-performance benchmark.
+
+Feature catalogue
+Derived from the user's local hotspot_detection_new study sources.
+See docs/FEATURE_GROUPS.md for paths and interpretation.
